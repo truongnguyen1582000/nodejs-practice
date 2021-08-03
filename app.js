@@ -22,6 +22,7 @@ const mailerRoute = require("./routes/B22-Nodemailer");
 const studentRoute = require("./routes/B23-Mongodb");
 const studentPostgres = require("./routes/B24-PostgreSql");
 const fbLogin = require("./routes/B20-fbLogin");
+const excelRW = require("./routes/B26-ExcelRW");
 
 //MIDDLEWARE
 const authMiddleware = require("./middlewares/authMiddleware");
@@ -32,6 +33,7 @@ app.use("/upload", uploadRoute);
 app.use("/mailer", mailerRoute);
 app.use("/student/v2/", studentPostgres);
 app.use("/student", studentRoute);
+app.use("/excel-file", excelRW);
 
 app.get("/", function (req, res) {
   res.sendFile(__dirname + "/index.html");
