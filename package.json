@@ -17,6 +17,7 @@
     "knex": "^0.95.9",
     "mongoose": "^5.13.4",
     "multer": "^1.4.2",
+    "node-rsa": "^1.1.1",
     "nodemailer": "^6.6.3",
     "passport": "^0.4.1",
     "passport-facebook": "^3.0.0",
